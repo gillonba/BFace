@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="" />
+    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="Re-added functional files">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/BFace.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +40,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -26,6 +60,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/BFace/BFace.csproj" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,21 +78,59 @@
       <option name="presentableId" value="Default" />
       <updated>1641798867045</updated>
       <workItem from="1641798868888" duration="1107000" />
+      <workItem from="1641802712708" duration="4759000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial checkin">
+      <created>1641802778479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641802778479</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Re-added functional files">
+      <created>1641869633050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641869633050</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial checkin" />
+    <MESSAGE value="Re-added functional files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Re-added functional files" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="746" y="313" width="424" height="495" key="FileChooserDialogImpl" timestamp="1641802725455">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="746" y="313" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1641802725455" />
     <state x="558" y="290" width="800" height="541" key="Rider.ProjectTemplateDialog.Size" timestamp="1641799323403">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="558" y="290" width="800" height="541" key="Rider.ProjectTemplateDialog.Size/0.27.1920.1053@0.27.1920.1053" timestamp="1641799323403" />
+    <state x="558" y="274" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1641869637005">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="558" y="274" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1641869637005" />
   </component>
 </project>

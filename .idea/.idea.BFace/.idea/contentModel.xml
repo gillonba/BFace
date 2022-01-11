@@ -7,8 +7,15 @@
       <e p="BFace.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="src/BFace" t="IncludeRecursive">
+        <e p="BFace.cs" t="Include" />
         <e p="BFace.csproj" t="IncludeRecursive" />
         <e p="Class1.cs" t="Include" />
+        <e p="Location.cs" t="Include" />
+        <e p="YOLO" t="Include">
+          <e p="YOLOv5_BitmapData.cs" t="Include" />
+          <e p="YOLOv5_Prediction.cs" t="Include" />
+          <e p="YOLOv5_Result.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
