@@ -16,7 +16,6 @@
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.ML.CpuMath.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.ML.DataView.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.ML.ImageAnalytics.dll
-/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.ML.OnnxConverter.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.ML.OnnxRuntime.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.ML.OnnxTransformer.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Microsoft.Win32.SystemEvents.dll
@@ -93,3 +92,6 @@
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x86/native/onnxruntime_providers_shared.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x86/native/onnxruntime_providers_shared.lib
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x86/native/onnxruntime_providers_shared.pdb
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/SixLabors.Fonts.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/SixLabors.ImageSharp.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/SixLabors.ImageSharp.Drawing.dll

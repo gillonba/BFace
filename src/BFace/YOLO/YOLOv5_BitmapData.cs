@@ -6,6 +6,7 @@ namespace BarronGillon.BFace.YOLO {
     public class YOLOv5_BitmapData {
         [ColumnName("bitmap")]
         [ImageType(640, 640)]
+        //public SixLabors.ImageSharp.Image Image { get; set; }
         public Bitmap Image { get; set; }
 
         [ColumnName("width")]
