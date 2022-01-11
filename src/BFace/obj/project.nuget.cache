@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NTROaIOrB2niiVjxfJrAW8CFWD4ZmStrhJ36JM7uOOeBj4p4P+jaItQ+xdeIHkIN39DwK4jEOG47NVyOaCdVxA==",
+  "dgSpecHash": "QQJ5IpEHrYeJlzxZbgQwRYV5ro2TVRfZ0tTKaAYlaFpHvb1j9MDWHt1hQ0l5cJCnScIWWkxBxHy2LEcNgJz5pg==",
   "success": true,
   "projectFilePath": "/home/barron/RiderProjects/BFace/src/BFace/BFace.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,8 @@
     "/home/barron/.nuget/packages/microsoft.ml.dataview/1.7.0/microsoft.ml.dataview.1.7.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.imageanalytics/1.7.0/microsoft.ml.imageanalytics.1.7.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.onnxconverter/0.19.0/microsoft.ml.onnxconverter.0.19.0.nupkg.sha512",
-    "/home/barron/.nuget/packages/microsoft.ml.onnxruntime.managed/1.6.0/microsoft.ml.onnxruntime.managed.1.6.0.nupkg.sha512",
+    "/home/barron/.nuget/packages/microsoft.ml.onnxruntime/1.10.0/microsoft.ml.onnxruntime.1.10.0.nupkg.sha512",
+    "/home/barron/.nuget/packages/microsoft.ml.onnxruntime.managed/1.10.0/microsoft.ml.onnxruntime.managed.1.10.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.onnxtransformer/1.7.0/microsoft.ml.onnxtransformer.1.7.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

@@ -6,7 +6,7 @@ public class Program {
     public static void Main() {
         var inputDir = Path.Combine("assets", "images");
         var outputDir = Path.Combine("assets", "out");
-        var modelPath = System.IO.Path.Combine("assets", "models", "best.onnx");
+        var modelPath = System.IO.Path.Combine("assets", "models", "bface.onnx");
 
         var detector = new BarronGillon.BFace.BFace(modelPath);
 

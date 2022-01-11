@@ -11,4 +11,16 @@
       <ProjectReference Include="..\..\src\BFace\BFace.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="assets\models\bface.onnx">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="assets\images\joejill.jpg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="assets\images\donaldmelania.jpg">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

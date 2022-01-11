@@ -13,8 +13,6 @@ namespace BarronGillon.BFace {
     public class BFace {
         private static readonly string[] classNames = new []{"face"};
 
-        //const string modelPath = @"Assets/Models/omnissiah.onnx";
-        
         const string imageFolder = @"Assets/Images";
 
         const string imageOutputFolder = @"Assets/Output";
