@@ -4,6 +4,7 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <ImplicitUsings>disable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>BarronGillon.BFace</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
