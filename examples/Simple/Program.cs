@@ -15,10 +15,9 @@ public class Program {
             System.Console.WriteLine("Checking " + f);
             
             // Get the results
-            var imgPath = f;
-            var img = new Bitmap(imgPath);
+            var img = new Bitmap(f);
             var results = detector.GetFaceLocations(img);
- 
+            
             // Output the results to console
             System.Console.WriteLine("Found {0} results:", results.Count());
             foreach (var r in results) {

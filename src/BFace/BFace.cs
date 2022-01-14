@@ -64,73 +64,25 @@ namespace BarronGillon.BFace {
         /// <param name="locations"></param>
         /// <returns></returns>
         public Bitmap Annotate(Bitmap image, IEnumerable<Location> locations) {
-            // TODO: System.Drawing is not longer supported cross-platform!  To annotate, pick another library.  Currently it appears microsot suggests three options:
-            // * ImageSharp
-            // * SkiaSharp
-            // * Microsoft.Maui.Graphics
-
-            /*using (var g = Graphics.FromImage(image)) {
-                foreach (var res in locations) {
-                    // draw predictions
-                    var x1 = res.Left;
-                    var y1 = res.Top;
-                    var x2 = res.Right;
-                    var y2 = res.Bottom;
-                    g.DrawRectangle(Pens.Red, x1, y1, x2 - x1, y2 - y1);
-                    using (var brushes = new SolidBrush(Color.FromArgb(50, Color.Red))) {
-                        g.FillRectangle(brushes, x1, y1, x2 - x1, y2 - y1);
-                    }
-
-                    g.DrawString(res.Confidence.ToString("0.00"),
-                        new Font("Arial", 12), Brushes.Blue, new PointF(x1, y1));
-                }
-
-                return image;
-            }*/
-
-            //System.IO.MemoryStream ms = new MemoryStream();
-            //image.Save(ms,ImageFormat.Bmp);
-            //var img = SixLabors.ImageSharp.Image.Load(ms);
-            SixLabors.ImageSharp.Image img = null;
-            using (var ms = new MemoryStream()) {
-                image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                ms.Seek(0, SeekOrigin.Begin);
-                img = Image.Load(ms);
-            }
+            var img = BitmapToImage(image);
             
             img.Mutate(x => {
+                var font = SixLabors.Fonts.SystemFonts.CreateFont("Ubuntu", 18);
+
                 //SixLabors.ImageSharp.Color.Red
                 foreach (var res in locations) {
                     var rect = new SixLabors.ImageSharp.Rectangle(res.Left, res.Top, res.Right - res.Left,
                         res.Bottom - res.Top);
                     
                     x.Draw(SixLabors.ImageSharp.Color.Red, 1, rect);
-                    
-                    
-                    
-                    //x.Fill(SixLabors.ImageSharp.Drawing.)
-                    //var font = SixLabors.Fonts.SystemFonts.CreateFont("Arial", 12); //new SixLabors.Fonts.Font("" ,2);
-                    //var font = SixLabors.Fonts.SystemFonts.Find("sansserif");
-                    var font = SixLabors.Fonts.SystemFonts.CreateFont("Ubuntu", 18);
-                    //x.DrawText(res.Confidence.ToString("0.00"), font, Color.Blue, new PointF(res.Left, res.Top));
+
                     string txt = res.Confidence.ToString("0.00");
                     var loc = new SixLabors.ImageSharp.PointF(res.Left, res.Top);
-                    x.DrawText(txt, font, Color.Blue, loc);
+                    x.DrawText(txt, font, SixLabors.ImageSharp.Color.Blue, loc);
                 }
             });
 
-            //System.IO.MemoryStream mso = new MemoryStream();
-            //img.Save(mso, new BmpEncoder());
-            //Bitmap ret = new Bitmap(mso);
-            //return ret;
-            System.Drawing.Bitmap ret = null;
-            using (var ms = new MemoryStream()) {
-                var imgEncoder = img.GetConfiguration().ImageFormatsManager.FindEncoder(PngFormat.Instance);
-                img.Save(ms, imgEncoder);
-                ms.Seek(0, SeekOrigin.Begin);
-                ret = new System.Drawing.Bitmap(ms);
-            }
-
+            var ret = ImageToBitmap(img);
             return ret;
         }
 
@@ -209,6 +161,18 @@ namespace BarronGillon.BFace {
             }
 
             return img;
+        }
+
+        private System.Drawing.Bitmap ImageToBitmap(SixLabors.ImageSharp.Image img) {
+            System.Drawing.Bitmap ret = null;
+            using (var ms = new MemoryStream()) {
+                var imgEncoder = img.GetConfiguration().ImageFormatsManager.FindEncoder(PngFormat.Instance);
+                img.Save(ms, imgEncoder);
+                ms.Seek(0, SeekOrigin.Begin);
+                ret = new System.Drawing.Bitmap(ms);
+            }
+
+            return ret;
         }
     }
 }
