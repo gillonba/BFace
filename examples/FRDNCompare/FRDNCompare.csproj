@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\BFace\BFace.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FaceRecognitionDotNet" Version="1.3.0.5" />
+    </ItemGroup>
+
+</Project>

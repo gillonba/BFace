@@ -23,11 +23,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="Annotation WIP.  Transitioning to ImageSharp.  It appears that ML.Net will be switching to ImageSharp, so that is probably the way to go.  They don't support it this release, but it is likely the best direction for the API to go">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BFace.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BFace.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BFace/BFace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.cs" afterDir="false" />
+    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="Just a bit of cleanup">
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/FRDNCompare.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +137,7 @@
       <workItem from="1641798868888" duration="1107000" />
       <workItem from="1641802712708" duration="5959000" />
       <workItem from="1641871366136" duration="10147000" />
+      <workItem from="1642148517376" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="Initial checkin">
       <created>1641802778479</created>
@@ -175,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641878935899</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Just a bit of cleanup">
+      <created>1642148692235</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642148692235</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +222,8 @@
     <MESSAGE value="Add a simple example" />
     <MESSAGE value="Added model to simple example.  Example is fully functional, though the model is not good (yet)" />
     <MESSAGE value="Annotation WIP.  Transitioning to ImageSharp.  It appears that ML.Net will be switching to ImageSharp, so that is probably the way to go.  They don't support it this release, but it is likely the best direction for the API to go" />
-    <option name="LAST_COMMIT_MESSAGE" value="Annotation WIP.  Transitioning to ImageSharp.  It appears that ML.Net will be switching to ImageSharp, so that is probably the way to go.  They don't support it this release, but it is likely the best direction for the API to go" />
+    <MESSAGE value="Just a bit of cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just a bit of cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="746" y="305" width="424" height="495" key="FileChooserDialogImpl" timestamp="1642147653689">
@@ -293,10 +314,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="558" y="282" width="800" height="541" key="Rider.ProjectTemplateDialog.Size/0.27.1920.1053@0.27.1920.1053" timestamp="1642147683936" />
-    <state x="558" y="254" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1641878952341">
+    <state x="558" y="250" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1642148693782">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="558" y="254" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1641878952341" />
+    <state x="558" y="250" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1642148693782" />
     <state x="623" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1641874674381">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

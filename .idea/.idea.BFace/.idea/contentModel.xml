@@ -3,6 +3,10 @@
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_BFace.-1763338274.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/dlibdotnet/19.21.0.20210302/runtimes/linux-AnyCPU/native/libDlibDotNetNative.so" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/dlibdotnet/19.21.0.20210302/runtimes/linux-AnyCPU/native/libDlibDotNetNativeDnn.so" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/facerecognitiondotnet/1.3.0.5/runtimes/linux-AnyCPU/native/libDlibDotNetNativeDnnAgeClassification.so" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/facerecognitiondotnet/1.3.0.5/runtimes/linux-AnyCPU/native/libDlibDotNetNativeDnnGenderClassification.so" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/microsoft.ml.onnxruntime/1.10.0/runtimes/win-x64/native/onnxruntime_providers_shared.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="BFace.sln" t="IncludeFlat" />
