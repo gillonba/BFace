@@ -13,6 +13,17 @@
       <e p="examples/FRDNCompare" t="IncludeRecursive">
         <e p="FRDNCompare.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
+        <e p="assets" t="Include">
+          <e p="images" t="Include">
+            <e p="donaldmelania.jpg" t="Include" />
+            <e p="ellen-selfie-1920.jpg" t="Include" />
+            <e p="joejill.jpg" t="Include" />
+            <e p="mash.jpg" t="Include" />
+          </e>
+          <e p="models" t="Include">
+            <e p="bface.onnx" t="Include" />
+          </e>
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
