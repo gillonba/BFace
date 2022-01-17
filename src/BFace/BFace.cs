@@ -24,9 +24,9 @@ namespace BarronGillon.BFace {
         
         private readonly PredictionEngine<YOLOv5_BitmapData, YOLOv5_Prediction> _predictionEngine;
 
-        public BFace(string modelPath) {
-            if (modelPath == null) throw new ArgumentNullException(modelPath);
-            if(!File.Exists(modelPath)) throw new ArgumentException("Could not find modelPath " + modelPath, nameof(modelPath));
+        public BFace(string modelFile) {
+            if (modelFile == null) throw new ArgumentNullException(modelFile);
+            if(!File.Exists(modelFile)) throw new ArgumentException("Could not find modelPath " + modelFile, nameof(modelFile));
             
             MLContext mlContext = new MLContext();
 
@@ -47,7 +47,7 @@ namespace BarronGillon.BFace {
                     {
                         "output"
                     },
-                    modelFile: modelPath));
+                    modelFile: modelFile));
 
             // Fit on empty list to obtain input data schema
             var model = pipeline.Fit(mlContext.Data.LoadFromEnumerable(new List<YOLOv5_BitmapData>()));
