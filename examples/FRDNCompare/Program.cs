@@ -9,10 +9,16 @@ using BarronGillon.BFace;
 using FaceRecognitionDotNet;
 
 public class Program {
-        public static float threshold => .01f;
+    // YOLO commands:
+    // train (from yolo dir):
+    // python train.py --data data/bface.yaml
+    // export: 
+    // python export.py --weights runs/train/exp12/weights/best.pt --img 640 --include onnx
+
+
+    public static float threshold => .01f;
 
     public static void Main() {
-        
         System.Console.WriteLine("Hello, World!");
 
         var bface = new BarronGillon.BFace.BFace(Path.Combine("assets", "models", "bface.onnx"));
@@ -23,17 +29,20 @@ public class Program {
         System.IO.Directory.Delete(mismatchoutdir, true);
 
         //Get the files to be compared
+        var extBlacklist = new string[] {".json", ".webp"};
         var filedir = Path.Combine("assets", "images");
-        var files = Directory.EnumerateFiles(filedir);
+        var files = Directory.EnumerateFiles(filedir)
+            .Where(x => !extBlacklist.Contains(Path.GetExtension(x)));
 
         //For each, get locations from both FRDN and BFace
         int ctr = 1;
+        int total = files.Count();
         int ctrMatch = 0;
         int ctrMismatch = 0;
         var swBFaceLocs = new System.Diagnostics.Stopwatch();
         var swFRDNLocs = new System.Diagnostics.Stopwatch();
         foreach(var f in files) {
-            System.Console.WriteLine($"Testing {ctr} {f}");            
+            System.Console.WriteLine($"Testing {ctr} of {total} {f}");            
 
             swBFaceLocs.Start();
             var img = new System.Drawing.Bitmap(f);
@@ -103,17 +112,18 @@ public class Program {
     /// <param name="source"></param>
     /// <param name="ifef"></param>
     /// <param name="outfile"></param>
-            public static void AnnotateImg(System.Drawing.Bitmap source, IEnumerable<FaceRecognitionDotNet.Location> ifef, string outfile) {
-                                var c = System.Drawing.Color.Red;
-                                 Brush b = new SolidBrush(c);
-                                 Pen p = new Pen(c);
+    public static void AnnotateImg(System.Drawing.Bitmap source, 
+        IEnumerable<FaceRecognitionDotNet.Location> ifef, string outfile) {
+        var c = System.Drawing.Color.Red;
+        Brush b = new SolidBrush(c);
+        Pen p = new Pen(c);
   
     
-                var pixelFormats = new [] {System.Drawing.Imaging.PixelFormat.Undefined, System.Drawing.Imaging.PixelFormat.DontCare, 
+        var pixelFormats = new [] {System.Drawing.Imaging.PixelFormat.Undefined, System.Drawing.Imaging.PixelFormat.DontCare, 
                     System.Drawing.Imaging.PixelFormat.Format1bppIndexed, System.Drawing.Imaging.PixelFormat.Format4bppIndexed, System.Drawing.Imaging.PixelFormat.Format8bppIndexed, 
                     System.Drawing.Imaging.PixelFormat.Format16bppGrayScale, System.Drawing.Imaging.PixelFormat.Format16bppArgb1555};
     
-                var tagFont = System.Drawing.SystemFonts.CaptionFont;
+        var tagFont = System.Drawing.SystemFonts.CaptionFont;
     
                 if (ifef.Any()) {
                     using(System.Drawing.Image img = source){
@@ -167,7 +177,7 @@ public class Program {
             var centerX = ((float)(l.Left + l.Right) / 2) / img.Width;
             var centerY = ((float)(l.Top + l.Bottom) / 2) / img.Height;
             var width = ((float) (l.Right - l.Left)) / img.Width;
-            var height = ((float) (l.Bottom - l.Top)) / img.Width;
+            var height = ((float) (l.Bottom - l.Top)) / img.Height;
             
             ret.Add($"0 {centerX} {centerY} {width} {height}");
         }

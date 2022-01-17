@@ -23,7 +23,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="FRDN compare mostly complete but not tested">
+    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="FRDN Compare appears to be working, and YOLO export appears to produce correct annotations">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" afterDir="false" />
@@ -40,9 +40,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/811D1130-FEDA-42D7-99A3-09852A934CF7/E/FontCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/793AA830-E673-45EB-85F5-767837E24F0F/ad/1aa0aa33/InternalDataKindExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/03BC5283-FE49-4AF2-BCB7-BD96D2378785/143/Image.FromStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BD131DB-E89F-4BB1-8C57-8A3340570234/22/5ce55262/InternalSchemaDefinition.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9F8AD794-955F-4295-9D0A-ABAB61AD0C61/F/SessionOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F77BD764-6DC3-4276-B1BF-A8E3F1D40F5D/D/Gdiplus.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E32BE3D4-4EBF-4917-AED5-05CCE95BBDC8/6f/f7dadb63/FaceRecognition.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -127,7 +129,7 @@
       <workItem from="1641802712708" duration="5959000" />
       <workItem from="1641871366136" duration="10147000" />
       <workItem from="1642148517376" duration="1874000" />
-      <workItem from="1642373991364" duration="7877000" />
+      <workItem from="1642373991364" duration="10859000" />
     </task>
     <task id="LOCAL-00001" summary="Initial checkin">
       <created>1641802778479</created>
@@ -199,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642378677723</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="FRDN Compare appears to be working, and YOLO export appears to produce correct annotations">
+      <created>1642382164623</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642382164623</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,104 +238,112 @@
     <MESSAGE value="Just a bit of cleanup" />
     <MESSAGE value="Initial FRDN compare checkin" />
     <MESSAGE value="FRDN compare mostly complete but not tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="FRDN compare mostly complete but not tested" />
+    <MESSAGE value="FRDN Compare appears to be working, and YOLO export appears to produce correct annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="FRDN Compare appears to be working, and YOLO export appears to produce correct annotations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="746" y="305" width="424" height="495" key="FileChooserDialogImpl" timestamp="1642147653689">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="746" y="305" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1642147653689" />
-    <state width="1878" height="369" key="GridCell.Tab.0.bottom" timestamp="1642381109947">
+    <state width="1878" height="369" key="GridCell.Tab.0.bottom" timestamp="1642384510554">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109947" />
-    <state width="1878" height="369" key="GridCell.Tab.0.center" timestamp="1642381109946">
+    <state width="1878" height="369" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510554" />
+    <state width="1878" height="369" key="GridCell.Tab.0.center" timestamp="1642384510554">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109946" />
-    <state width="1878" height="369" key="GridCell.Tab.0.left" timestamp="1642381109946">
+    <state width="1878" height="369" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510554" />
+    <state width="1878" height="369" key="GridCell.Tab.0.left" timestamp="1642384510554">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109946" />
-    <state width="1878" height="369" key="GridCell.Tab.0.right" timestamp="1642381109947">
+    <state width="1878" height="369" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510554" />
+    <state width="1878" height="369" key="GridCell.Tab.0.right" timestamp="1642384510554">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109947" />
-    <state width="1878" height="369" key="GridCell.Tab.1.bottom" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510554" />
+    <state width="1878" height="369" key="GridCell.Tab.1.bottom" timestamp="1642384510459">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.1.center" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510459" />
+    <state width="1878" height="369" key="GridCell.Tab.1.center" timestamp="1642384510459">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.1.left" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510459" />
+    <state width="1878" height="369" key="GridCell.Tab.1.left" timestamp="1642384510459">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.1.right" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510459" />
+    <state width="1878" height="369" key="GridCell.Tab.1.right" timestamp="1642384510459">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.2.bottom" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510459" />
+    <state width="1878" height="369" key="GridCell.Tab.2.bottom" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.2.center" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.2.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.2.center" timestamp="1642384510459">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.2.left" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.2.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510459" />
+    <state width="1878" height="369" key="GridCell.Tab.2.left" timestamp="1642384510459">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.2.right" timestamp="1642381109867">
+    <state width="1878" height="369" key="GridCell.Tab.2.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510459" />
+    <state width="1878" height="369" key="GridCell.Tab.2.right" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109867" />
-    <state width="1878" height="369" key="GridCell.Tab.3.bottom" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.2.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.3.bottom" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.3.center" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.3.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.3.center" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.3.left" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.3.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.3.left" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.3.right" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.3.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.3.right" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.4.bottom" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.3.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.4.bottom" timestamp="1642384510461">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.4.center" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.4.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510461" />
+    <state width="1878" height="369" key="GridCell.Tab.4.center" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.4.left" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.4.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.4.left" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
-    <state width="1878" height="369" key="GridCell.Tab.4.right" timestamp="1642381109868">
+    <state width="1878" height="369" key="GridCell.Tab.4.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
+    <state width="1878" height="369" key="GridCell.Tab.4.right" timestamp="1642384510460">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642381109868" />
+    <state width="1878" height="369" key="GridCell.Tab.4.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642384510460" />
     <state x="558" y="282" width="800" height="541" key="Rider.ProjectTemplateDialog.Size" timestamp="1642147683936">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="558" y="282" width="800" height="541" key="Rider.ProjectTemplateDialog.Size/0.27.1920.1053@0.27.1920.1053" timestamp="1642147683936" />
-    <state x="558" y="242" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1642378679502">
+    <state x="558" y="238" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1642382165955">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="558" y="242" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1642378679502" />
+    <state x="558" y="238" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1642382165955" />
     <state x="623" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1641874674381">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="623" y="256" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1641874674381" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="Path.GetExtension(f)" language="C#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -23,6 +23,7 @@ namespace BarronGillon.BFace {
         private static readonly string[] classNames = new []{"face"};
         
         private readonly PredictionEngine<YOLOv5_BitmapData, YOLOv5_Prediction> _predictionEngine;
+        private float _threshold = .5f;
 
         public BFace(string modelFile) {
             if (modelFile == null) throw new ArgumentNullException(modelFile);
@@ -116,7 +117,7 @@ namespace BarronGillon.BFace {
                         Top = (int) x.BBox[1],
                         Bottom = (int) x.BBox[3],
                         Confidence = x.Confidence
-                    });
+                    }).Where(x => x.Confidence > _threshold);
 
                     ret.Add(returnable);
 
