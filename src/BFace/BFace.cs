@@ -21,6 +21,8 @@ namespace BarronGillon.BFace {
 
     public class BFace {
         private static readonly string[] classNames = new []{"face"};
+        //static readonly string[] classNames = new string[] { "person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed", "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush" };
+        //private static readonly string[] classNames = new string[] {"leaf", "flower", "fruit"};
         
         private readonly PredictionEngine<YOLOv5_BitmapData, YOLOv5_Prediction> _predictionEngine;
         private float _threshold = .5f;
@@ -39,7 +41,7 @@ namespace BarronGillon.BFace {
                     {
                         { "images", new[] { 1, 3, 640, 640 } },
                         { "output", new[] { 1, 25200, 85 } },
-                    }*/
+                    },*/
                     inputColumnNames: new[]
                     {
                         "images"

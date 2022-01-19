@@ -7,7 +7,7 @@ public class Program {
         var inputDir = Path.Combine("assets", "images");
         var outputDir = Path.Combine("assets", "out");
         var modelPath = System.IO.Path.Combine("assets", "models", "bface.onnx");
-
+        
         var detector = new BarronGillon.BFace.BFace(modelPath);
 
         var inputFiles = Directory.GetFiles(inputDir);
@@ -21,8 +21,8 @@ public class Program {
             // Output the results to console
             System.Console.WriteLine("Found {0} results:", results.Count());
             foreach (var r in results) {
-                System.Console.WriteLine("Left: {0} Top: {1} Right: {2} Bottom: {3} Confidence: {4}",
-                    r.Left, r.Top, r.Right, r.Bottom, r.Confidence);
+                System.Console.WriteLine("Left: {0} Top: {1} Right: {2} Bottom: {3} Confidence: {4}, ratio: {5}, imgratio: {6}",
+                    r.Left, r.Top, r.Right, r.Bottom, r.Confidence, (float)(r.Right - r.Left) / (r.Bottom - r.Top), (float)img.Width / img.Height);
             }
 
             // Write the results to an image

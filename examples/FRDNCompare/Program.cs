@@ -170,7 +170,7 @@ public class Program {
     /// </remarks>
     /// <returns></returns>
     public static IEnumerable<string> FRDNToYOLO(IEnumerable<FaceRecognitionDotNet.Location> locs, 
-    FaceRecognitionDotNet.Image img){
+        FaceRecognitionDotNet.Image img){
         var ret = new List<string>();
 
         foreach (var l in locs) {
