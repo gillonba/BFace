@@ -23,19 +23,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="FRDN Compare looks ready for training with a full-size dataset">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="Test">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/BFace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,9 +41,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/03BC5283-FE49-4AF2-BCB7-BD96D2378785/143/Image.FromStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BD131DB-E89F-4BB1-8C57-8A3340570234/22/5ce55262/InternalSchemaDefinition.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9F8AD794-955F-4295-9D0A-ABAB61AD0C61/F/SessionOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F77BD764-6DC3-4276-B1BF-A8E3F1D40F5D/D/Gdiplus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F77BD764-6DC3-4276-B1BF-A8E3F1D40F5D/D/Gdiplus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E32BE3D4-4EBF-4917-AED5-05CCE95BBDC8/6f/f7dadb63/FaceRecognition.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA2BC705-8D5A-4FA7-84B3-C9E3DF6BE87D/54/532961fd/UltraFace.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -62,8 +52,8 @@
         <option value="$PROJECT_DIR$/src/BFace/Class1.cs" />
         <option value="$PROJECT_DIR$/src/BFace/YOLO/YOLOv5_BitmapData.cs" />
         <option value="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" />
-        <option value="$PROJECT_DIR$/src/BFace/BFace.cs" />
         <option value="$PROJECT_DIR$/examples/Simple/Program.cs" />
+        <option value="$PROJECT_DIR$/src/BFace/BFace.cs" />
       </list>
     </option>
   </component>
@@ -139,6 +129,7 @@
       <workItem from="1642148517376" duration="1874000" />
       <workItem from="1642373991364" duration="10973000" />
       <workItem from="1642386410844" duration="7672000" />
+      <workItem from="1643178221297" duration="1085000" />
     </task>
     <task id="LOCAL-00001" summary="Initial checkin">
       <created>1641802778479</created>
@@ -224,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642384918504</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Test">
+      <created>1643178276331</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643178276331</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +254,8 @@
     <MESSAGE value="FRDN compare mostly complete but not tested" />
     <MESSAGE value="FRDN Compare appears to be working, and YOLO export appears to produce correct annotations" />
     <MESSAGE value="FRDN Compare looks ready for training with a full-size dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="FRDN Compare looks ready for training with a full-size dataset" />
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="746" y="305" width="424" height="495" key="FileChooserDialogImpl" timestamp="1642147653689">
@@ -347,10 +346,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="558" y="282" width="800" height="541" key="Rider.ProjectTemplateDialog.Size/0.27.1920.1053@0.27.1920.1053" timestamp="1642147683936" />
-    <state x="558" y="234" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1642384923311">
+    <state x="558" y="230" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1643178318576">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="558" y="234" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1642384923311" />
+    <state x="558" y="230" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1643178318576" />
     <state x="623" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1641874674381">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

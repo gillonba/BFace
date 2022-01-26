@@ -25,11 +25,13 @@ namespace BarronGillon.BFace {
         //private static readonly string[] classNames = new string[] {"leaf", "flower", "fruit"};
         
         private readonly PredictionEngine<YOLOv5_BitmapData, YOLOv5_Prediction> _predictionEngine;
-        private float _threshold = .5f;
+        private readonly float _threshold;
 
-        public BFace(string modelFile) {
+        public BFace(string modelFile, float threshold = 0) {
             if (modelFile == null) throw new ArgumentNullException(modelFile);
             if(!File.Exists(modelFile)) throw new ArgumentException("Could not find modelPath " + modelFile, nameof(modelFile));
+
+            _threshold = threshold;
             
             MLContext mlContext = new MLContext();
 
@@ -66,6 +68,7 @@ namespace BarronGillon.BFace {
         /// <param name="image"></param>
         /// <param name="locations"></param>
         /// <returns></returns>
+        [System.Obsolete]
         public Bitmap Annotate(Bitmap image, IEnumerable<Location> locations) {
             var img = BitmapToImage(image);
             
@@ -89,6 +92,27 @@ namespace BarronGillon.BFace {
             return ret;
         }
 
+        public Image Annotate(Image img, IEnumerable<Location> locations) {
+
+            img.Clone(x => {
+                var font = SixLabors.Fonts.SystemFonts.CreateFont("Ubuntu", 18);
+
+                //SixLabors.ImageSharp.Color.Red
+                foreach (var res in locations) {
+                    var rect = new SixLabors.ImageSharp.Rectangle(res.Left, res.Top, res.Right - res.Left,
+                        res.Bottom - res.Top);
+                    
+                    x.Draw(SixLabors.ImageSharp.Color.Red, 1, rect);
+
+                    string txt = res.Confidence.ToString("0.00");
+                    var loc = new SixLabors.ImageSharp.PointF(res.Left, res.Top);
+                    x.DrawText(txt, font, SixLabors.ImageSharp.Color.Blue, loc);
+                }
+            });
+
+            return img;
+        }
+        
         public IEnumerable<Location> GetFaceLocations(Bitmap image) {
             return GetFaceLocations(new[] {image}).First();
         }
@@ -105,22 +129,29 @@ namespace BarronGillon.BFace {
                 //System.Console.WriteLine($"Testing {imageName}...");
                 //using(var bitmap = new Bitmap(Image.FromFile(Path.Combine(imageFolder, imageName)))) //using (var bitmap = new Bitmap(Image.FromFile(Path.Combine(imageFolder, imageName))))
 
-                var ret = new List<IEnumerable<Location>>();
+                var ret = new List<IEnumerable<Location>>(); 
                 
-                foreach (var bitmap in images) {
+                foreach (var bitmap in images) {   
                     // predict
                     var predict = _predictionEngine.Predict(new YOLOv5_BitmapData() {Image = bitmap});
                     //var predict = _predictionEngine.Predict(new YOLOv5_BitmapData() {Image = BitmapToImage(bitmap)});
-                    var results = predict.GetResults(classNames, 0.3f, 0.7f);
-
+                    //var results = predict.GetResults(classNames, 0.3f, 0.7f);
+                    //var results = predict.GetResults(classNames);
+                    var results = predict.GetResults(
+                        categories: classNames, 
+                        scoreThres: .3f,  
+                        iouThres: .7f);
+                    
                     var returnable = results.Select(x => new Location() {
-                        Left = (int) x.BBox[0],
-                        Right = (int) x.BBox[2],
-                        Top = (int) x.BBox[1],
-                        Bottom = (int) x.BBox[3],
+                        Left = (int)x.BBox[0],
+                        Right = (int)x.BBox[2],
+                        Top = (int)x.BBox[1],
+                        Bottom = (int)x.BBox[3],
                         Confidence = x.Confidence
-                    }).Where(x => x.Confidence > _threshold);
- 
+                    });//.Where(x => x.Confidence > _threshold);
+
+                    returnable = returnable.Where(x => x.Confidence > _threshold);
+                    
                     ret.Add(returnable);
 
                     /*using (var g = Graphics.FromImage(bitmap))
