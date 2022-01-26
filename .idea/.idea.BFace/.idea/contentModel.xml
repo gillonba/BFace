@@ -15,12 +15,10 @@
         <e p="Program.cs" t="Include" />
         <e p="assets" t="Include">
           <e p="images" t="Include">
-            <e p="9302855_web1_swimteam-hero.jpg" t="Include" />
             <e p="donaldmelania.jpg" t="Include" />
             <e p="ellen-selfie-1920.jpg" t="Include" />
             <e p="joejill.jpg" t="Include" />
             <e p="mash.jpg" t="Include" />
-            <e p="swim_team.jpg" t="Include" />
           </e>
           <e p="models" t="Include">
             <e p="bface.onnx" t="Include" />

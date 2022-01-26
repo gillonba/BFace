@@ -120,7 +120,7 @@ namespace BarronGillon.BFace {
                         Bottom = (int) x.BBox[3],
                         Confidence = x.Confidence
                     }).Where(x => x.Confidence > _threshold);
-
+ 
                     ret.Add(returnable);
 
                     /*using (var g = Graphics.FromImage(bitmap))
