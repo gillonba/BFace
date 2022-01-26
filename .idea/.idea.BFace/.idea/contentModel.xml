@@ -54,6 +54,26 @@
           </e>
         </e>
       </e>
+      <e p="examples/UltraFaceCompare" t="IncludeRecursive">
+        <e p="Program.cs" t="Include" />
+        <e p="UltraFaceCompare.csproj" t="IncludeRecursive" />
+        <e p="assets" t="Include">
+          <e p="models" t="Include">
+            <e p="RFB-320.bin" t="Include" />
+            <e p="RFB-320.param" t="Include" />
+            <e p="bface.onnx" t="Include" />
+            <e p="bface_uf.onnx" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net6.0" t="Include">
+              <e p="UltraFaceCompare.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="src/BFace" t="IncludeRecursive">
         <e p="BFace.cs" t="Include" />

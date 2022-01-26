@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple", "examples\Simple\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRDNCompare", "examples\FRDNCompare\FRDNCompare.csproj", "{7E1408F6-6FE8-4629-A52E-1D3C91EB5172}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraFaceCompare", "examples\UltraFaceCompare\UltraFaceCompare.csproj", "{A6C0571F-2CFA-4D4F-9083-355FC49690E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{7E1408F6-6FE8-4629-A52E-1D3C91EB5172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E1408F6-6FE8-4629-A52E-1D3C91EB5172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E1408F6-6FE8-4629-A52E-1D3C91EB5172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C0571F-2CFA-4D4F-9083-355FC49690E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C0571F-2CFA-4D4F-9083-355FC49690E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C0571F-2CFA-4D4F-9083-355FC49690E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C0571F-2CFA-4D4F-9083-355FC49690E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
