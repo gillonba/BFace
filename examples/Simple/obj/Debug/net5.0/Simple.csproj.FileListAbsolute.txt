@@ -29,9 +29,6 @@
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/osx-x64/native/libLdaNative.dylib
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/LdaNative.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x86/native/LdaNative.dll
-/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll
-/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll
-/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/BFace.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/BFace.pdb
 /home/barron/RiderProjects/BFace/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache
@@ -95,3 +92,8 @@
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/SixLabors.Fonts.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/SixLabors.ImageSharp.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/SixLabors.ImageSharp.Drawing.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Yolov5Net.Scorer.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Yolov5Net.Scorer.pdb

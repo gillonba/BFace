@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hhuNH1TYulnFrZpefEyZ6sVsnmzo8nPsE/RKeie4azpCGkQV+jmvKggA2ODoxpwE76GITMR980ExL6KGQ/EXRg==",
+  "dgSpecHash": "cj1pQDtXGmgolwntvsdMLeBxO1bEekAVCIvY/pF1Bz01sfxlyInrbCnSFc5QUUAfNLDXmFrucVUdK2yDX0h5Lw==",
   "success": true,
   "projectFilePath": "/home/barron/RiderProjects/BFace/src/BFace/BFace.csproj",
   "expectedPackageFiles": [
@@ -53,7 +53,7 @@
     "/home/barron/.nuget/packages/system.diagnostics.diagnosticsource/4.3.0/system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
     "/home/barron/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
     "/home/barron/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
-    "/home/barron/.nuget/packages/system.drawing.common/4.5.0/system.drawing.common.4.5.0.nupkg.sha512",
+    "/home/barron/.nuget/packages/system.drawing.common/5.0.2/system.drawing.common.5.0.2.nupkg.sha512",
     "/home/barron/.nuget/packages/system.dynamic.runtime/4.3.0/system.dynamic.runtime.4.3.0.nupkg.sha512",
     "/home/barron/.nuget/packages/system.globalization/4.3.0/system.globalization.4.3.0.nupkg.sha512",
     "/home/barron/.nuget/packages/system.globalization.calendars/4.3.0/system.globalization.calendars.4.3.0.nupkg.sha512",

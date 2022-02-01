@@ -5,6 +5,9 @@
     <projectFile>examples/FRDNCompare/FRDNCompare.csproj</projectFile>
     <projectFile>examples/UltraFaceCompare/UltraFaceCompare.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -24,9 +27,62 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="Test">
+    <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/Extensions/RectangleExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/Models/YoloModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloLabel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloLabelKind.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloPrediction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BFace.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BFace.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/System.Drawing.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/System.Drawing.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Simple.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Simple.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/Debug/net6.0/UltraFaceCompare.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/Debug/net6.0/UltraFaceCompare.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/Debug/net6.0/UltraFaceCompare.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/Debug/net6.0/UltraFaceCompare.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/UltraFaceCompare.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/UltraFaceCompare.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/BFace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/BFace.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +92,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/811D1130-FEDA-42D7-99A3-09852A934CF7/E/FontCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/793AA830-E673-45EB-85F5-767837E24F0F/ad/1aa0aa33/InternalDataKindExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/03BC5283-FE49-4AF2-BCB7-BD96D2378785/143/Image.FromStream.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2BD131DB-E89F-4BB1-8C57-8A3340570234/22/5ce55262/InternalSchemaDefinition.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9F8AD794-955F-4295-9D0A-ABAB61AD0C61/F/SessionOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F77BD764-6DC3-4276-B1BF-A8E3F1D40F5D/D/Gdiplus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E32BE3D4-4EBF-4917-AED5-05CCE95BBDC8/6f/f7dadb63/FaceRecognition.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8d94d2e6b253287ab59455e84e6426a47a8a36783843794d5828ee25757efa8c/Interop.IOErrors.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/ddaf60a25ed34192922b08128211e67a1d488/b3/1f10ca1b/System.Drawing.Common.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA2BC705-8D5A-4FA7-84B3-C9E3DF6BE87D/54/532961fd/UltraFace.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F77BD764-6DC3-4276-B1BF-A8E3F1D40F5D/D/Gdiplus.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -58,6 +118,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="23Uq9rDQNz6aklp5JHDgXBqgStf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -69,7 +132,7 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29994586" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/UltraFaceCompare/UltraFaceCompare.csproj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yolov5-net/src/Yolov5Net.Scorer/bin/Debug/netstandard2.0/Yolov5Net.Scorer.dll" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,7 +211,10 @@
       <workItem from="1642148517376" duration="1874000" />
       <workItem from="1642373991364" duration="10973000" />
       <workItem from="1642386410844" duration="7672000" />
-      <workItem from="1643178221297" duration="2009000" />
+      <workItem from="1643178221297" duration="3312000" />
+      <workItem from="1643598023696" duration="2571000" />
+      <workItem from="1643600613998" duration="1626000" />
+      <workItem from="1643679420613" duration="4346000" />
     </task>
     <task id="LOCAL-00001" summary="Initial checkin">
       <created>1641802778479</created>
@@ -248,12 +314,27 @@
       <option name="project" value="LOCAL" />
       <updated>1643181072171</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Re-added UF compare">
+      <created>1643182417084</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1643182417084</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Re-added UF compare">
+      <created>1643182468906</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643182468906</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +347,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -281,107 +361,27 @@
     <MESSAGE value="FRDN Compare appears to be working, and YOLO export appears to produce correct annotations" />
     <MESSAGE value="FRDN Compare looks ready for training with a full-size dataset" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="746" y="301" width="424" height="495" key="FileChooserDialogImpl" timestamp="1643182387076">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="746" y="301" width="424" height="495" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1643182387076" />
-    <state width="1878" height="369" key="GridCell.Tab.0.bottom" timestamp="1642478260477">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260477" />
-    <state width="1878" height="369" key="GridCell.Tab.0.center" timestamp="1642478260477">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260477" />
-    <state width="1878" height="369" key="GridCell.Tab.0.left" timestamp="1642478260477">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260477" />
-    <state width="1878" height="369" key="GridCell.Tab.0.right" timestamp="1642478260477">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260477" />
-    <state width="1878" height="369" key="GridCell.Tab.1.bottom" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.1.center" timestamp="1642478260477">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260477" />
-    <state width="1878" height="369" key="GridCell.Tab.1.left" timestamp="1642478260477">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260477" />
-    <state width="1878" height="369" key="GridCell.Tab.1.right" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.2.bottom" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.2.center" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.2.left" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.2.right" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.2.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.3.bottom" timestamp="1642478260479">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260479" />
-    <state width="1878" height="369" key="GridCell.Tab.3.center" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.3.left" timestamp="1642478260478">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260478" />
-    <state width="1878" height="369" key="GridCell.Tab.3.right" timestamp="1642478260479">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.3.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260479" />
-    <state width="1878" height="369" key="GridCell.Tab.4.bottom" timestamp="1642478260479">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260479" />
-    <state width="1878" height="369" key="GridCell.Tab.4.center" timestamp="1642478260479">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.center/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260479" />
-    <state width="1878" height="369" key="GridCell.Tab.4.left" timestamp="1642478260479">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.left/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260479" />
-    <state width="1878" height="369" key="GridCell.Tab.4.right" timestamp="1642478260479">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="369" key="GridCell.Tab.4.right/0.27.1920.1053@0.27.1920.1053" timestamp="1642478260479" />
-    <state x="558" y="282" width="800" height="541" key="Rider.ProjectTemplateDialog.Size" timestamp="1642147683936">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="558" y="282" width="800" height="541" key="Rider.ProjectTemplateDialog.Size/0.27.1920.1053@0.27.1920.1053" timestamp="1642147683936" />
-    <state x="558" y="226" width="800" height="566" key="Vcs.Push.Dialog.v2" timestamp="1643181074096">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="558" y="226" width="800" height="566" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1643181074096" />
-    <state x="623" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1641874674381">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="623" y="256" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1641874674381" />
+    <MESSAGE value="Re-added UF compare" />
+    <option name="LAST_COMMIT_MESSAGE" value="Re-added UF compare" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/BFace/BFace.cs</url>
+          <line>116</line>
+          <properties documentPath="$PROJECT_DIR$/src/BFace/BFace.cs" initialLine="118" containingFunctionPresentation="method 'GetFaceLocations'">
+            <startOffsets>
+              <option value="5769" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5770" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="DotNetProject">
         <watch expression="Path.GetExtension(f)" language="C#" />

@@ -5,12 +5,10 @@ using static Microsoft.ML.Transforms.Image.ImageResizingEstimator;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using SixLabors.ImageSharp.Advanced;
 using SixLabors.ImageSharp.Drawing.Processing;
-using SixLabors.ImageSharp.Formats.Bmp;
 using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.Processing;
 using Color = SixLabors.ImageSharp.Color;
@@ -25,6 +23,7 @@ namespace BarronGillon.BFace {
         //private static readonly string[] classNames = new string[] {"leaf", "flower", "fruit"};
         
         private readonly PredictionEngine<YOLOv5_BitmapData, YOLOv5_Prediction> _predictionEngine;
+        private readonly Yolov5Net.Scorer.YoloScorer<Yolov5Net.Scorer.Models.YoloBFaceP5Model> _scorer;
         private readonly float _threshold;
 
         public BFace(string modelFile, float threshold = 0) {
@@ -59,6 +58,8 @@ namespace BarronGillon.BFace {
 
             // Create prediction engine
             _predictionEngine = mlContext.Model.CreatePredictionEngine<YOLOv5_BitmapData, YOLOv5_Prediction>(model);
+            
+            _scorer = new Yolov5Net.Scorer.YoloScorer<Yolov5Net.Scorer.Models.YoloBFaceP5Model>(modelFile);
         }
         
 
@@ -114,7 +115,15 @@ namespace BarronGillon.BFace {
         }
         
         public IEnumerable<Location> GetFaceLocations(Bitmap image) {
-            return GetFaceLocations(new[] {image}).First();
+            List<Yolov5Net.Scorer.YoloPrediction> predictions = _scorer.Predict(image);
+            var r = predictions.Select(x => new Location() {
+                Top = (int)x.Rectangle.Top,
+                Bottom = (int)x.Rectangle.Bottom,
+                Left = (int)x.Rectangle.Left,
+                Right = (int)x.Rectangle.Right,
+                Confidence = x.Score
+            });
+            return r;
         }
         
         /// <summary>
@@ -122,7 +131,7 @@ namespace BarronGillon.BFace {
         /// </summary>
         /// <param name="images">The images to scan.  For now, ML.Net does not officially support ImageSharp, though it is on their roadmap</param>
         /// <returns></returns>
-        public IEnumerable<IEnumerable<Location>> GetFaceLocations(IEnumerable<Bitmap> images) {
+        public IEnumerable<IEnumerable<Location>> GetFaceLocations_old(IEnumerable<Bitmap> images) {
             var timer = Stopwatch.StartNew();
             //foreach(string imageName in inputFiles)  //foreach (string imageName in new string[] { "kite.jpg", "kite_416.jpg", "dog_cat.jpg", "cars road.jpg", "ski.jpg", "ski2.jpg" })
             //{

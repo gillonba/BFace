@@ -123,6 +123,10 @@
             "SixLabors.ImageSharp.Drawing": {
               "target": "Package",
               "version": "[1.0.0-beta13, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
