@@ -28,17 +28,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588b7c06-29d6-43d6-8c3d-22b16b6549bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/Extensions/RectangleExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/Models/YoloModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloLabel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloLabelKind.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloPrediction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Simple/assets/images/ellen-selfie-1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/Models/YoloBFaceP5Model.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BFace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BFace/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/Debug/net6.0/FRDNCompare.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/FRDNCompare.csproj.nuget.dgspec.json" afterDir="false" />
@@ -46,19 +38,15 @@
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/FRDNCompare/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/examples/FRDNCompare/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Simple/Simple.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/Simple.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/BFace.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/Simple.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/System.Drawing.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/System.Drawing.Common.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.dll" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Simple/obj/Debug/net5.0/Simple.pdb" afterDir="false" />
@@ -76,7 +64,10 @@
       <change beforePath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/examples/UltraFaceCompare/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/BFace.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/BFace.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/BFace.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/BFace.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFace/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFace/obj/project.assets.json" afterDir="false" />
@@ -102,10 +93,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/BFace/obj/Debug/netstandard2.1/BFace.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8d94d2e6b253287ab59455e84e6426a47a8a36783843794d5828ee25757efa8c/Interop.IOErrors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/ddaf60a25ed34192922b08128211e67a1d488/b3/1f10ca1b/System.Drawing.Common.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/689b56e3e8c8ee9a95fd17d0d0c3e9562e22ba263b1e26d1c567952e6b879d57/Gdiplus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26f584213b81ee375def8b80d3bb3a5808cd73f4eed7d1589f876f0cea872/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DA2BC705-8D5A-4FA7-84B3-C9E3DF6BE87D/54/532961fd/UltraFace.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F77BD764-6DC3-4276-B1BF-A8E3F1D40F5D/D/Gdiplus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9c4a24db6f6865c9998863da83423bdcfe6ae2ea7741f6b0e3af6291b0226637/SessionOptions.shared.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../yolov5-net/src/Yolov5Net.Scorer/YoloScorer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -115,6 +108,7 @@
         <option value="$PROJECT_DIR$/examples/FRDNCompare/Program.cs" />
         <option value="$PROJECT_DIR$/examples/Simple/Program.cs" />
         <option value="$PROJECT_DIR$/src/BFace/BFace.cs" />
+        <option value="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs" />
       </list>
     </option>
   </component>
@@ -214,7 +208,10 @@
       <workItem from="1643178221297" duration="3312000" />
       <workItem from="1643598023696" duration="2571000" />
       <workItem from="1643600613998" duration="1626000" />
-      <workItem from="1643679420613" duration="4346000" />
+      <workItem from="1643679420613" duration="6627000" />
+      <workItem from="1643704461987" duration="3307000" />
+      <workItem from="1643935205058" duration="1204000" />
+      <workItem from="1645597021333" duration="4256000" />
     </task>
     <task id="LOCAL-00001" summary="Initial checkin">
       <created>1641802778479</created>
@@ -328,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643182468906</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Migrated in Yolov5Net.  This appears to be the solution to my accuracy issues, though speed looks a bit worse.  That may be fixable, or ignorable">
+      <created>1643690251211</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643690251211</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,23 +366,24 @@
     <MESSAGE value="FRDN Compare looks ready for training with a full-size dataset" />
     <MESSAGE value="Test" />
     <MESSAGE value="Re-added UF compare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-added UF compare" />
+    <MESSAGE value="Migrated in Yolov5Net.  This appears to be the solution to my accuracy issues, though speed looks a bit worse.  That may be fixable, or ignorable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated in Yolov5Net.  This appears to be the solution to my accuracy issues, though speed looks a bit worse.  That may be fixable, or ignorable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/BFace/BFace.cs</url>
-          <line>116</line>
-          <properties documentPath="$PROJECT_DIR$/src/BFace/BFace.cs" initialLine="118" containingFunctionPresentation="method 'GetFaceLocations'">
+          <url>file://$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs</url>
+          <line>101</line>
+          <properties documentPath="$PROJECT_DIR$/src/BFace/YOLOv5NET/YoloScorer.cs" initialLine="101" containingFunctionPresentation="method 'ResizeImage'">
             <startOffsets>
-              <option value="5769" />
+              <option value="4112" />
             </startOffsets>
             <endOffsets>
-              <option value="5770" />
+              <option value="4124" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

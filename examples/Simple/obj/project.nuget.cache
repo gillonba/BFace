@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "61TOcH8bDQG392ufN5/0RpfwrNvpqAscsw5e8zwOuGLdG+gMLi59Q/a0WVlPAIsVuFkpmyjJcuIeA0A02jxvyg==",
+  "dgSpecHash": "L2576FWRWfmrBmhEKv6/vclP5pAbeYC7/Hl04YWzfPnEEr4eL5GscQG/rw5YlXvCoh3LelTgiO+sOyZmy2TNTQ==",
   "success": true,
   "projectFilePath": "/home/barron/RiderProjects/BFace/examples/Simple/Simple.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "/home/barron/.nuget/packages/microsoft.ml.dataview/1.7.0/microsoft.ml.dataview.1.7.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.imageanalytics/1.7.0/microsoft.ml.imageanalytics.1.7.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.onnxruntime/1.10.0/microsoft.ml.onnxruntime.1.10.0.nupkg.sha512",
+    "/home/barron/.nuget/packages/microsoft.ml.onnxruntime.gpu/1.10.0/microsoft.ml.onnxruntime.gpu.1.10.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.onnxruntime.managed/1.10.0/microsoft.ml.onnxruntime.managed.1.10.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.ml.onnxtransformer/1.7.0/microsoft.ml.onnxtransformer.1.7.0.nupkg.sha512",
     "/home/barron/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",

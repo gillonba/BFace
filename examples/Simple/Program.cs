@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -16,7 +17,10 @@ public class Program {
             
             // Get the results
             var img = new Bitmap(f);
+            Stopwatch swDetect = Stopwatch.StartNew();
             var results = detector.GetFaceLocations(img);
+            swDetect.Stop();
+            System.Console.WriteLine("Detected in " + swDetect.Elapsed.ToString());
             
             // Output the results to console
             System.Console.WriteLine("Found {0} results:", results.Count());

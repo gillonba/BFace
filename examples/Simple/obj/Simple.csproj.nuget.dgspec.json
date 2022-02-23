@@ -13,15 +13,9 @@
         "packagesPath": "/home/barron/.nuget/packages/",
         "outputPath": "/home/barron/RiderProjects/BFace/examples/Simple/obj/",
         "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/barron/.nuget/NuGet/NuGet.Config"
-        ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
@@ -69,15 +63,9 @@
         "packagesPath": "/home/barron/.nuget/packages/",
         "outputPath": "/home/barron/RiderProjects/BFace/src/BFace/obj/",
         "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/barron/.nuget/NuGet/NuGet.Config"
-        ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
@@ -103,6 +91,10 @@
               "version": "[1.7.0, )"
             },
             "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime.Gpu": {
               "target": "Package",
               "version": "[1.10.0, )"
             },

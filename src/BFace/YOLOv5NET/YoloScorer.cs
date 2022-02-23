@@ -19,6 +19,14 @@ namespace BarronGillon.BFace.YOLOv5NET {
 
         private readonly InferenceSession _inferenceSession;
 
+        private System.Drawing.Imaging.PixelFormat[] pixelFormats = new[] {
+            System.Drawing.Imaging.PixelFormat.Undefined,
+            System.Drawing.Imaging.PixelFormat.DontCare, System.Drawing.Imaging.PixelFormat.Format1bppIndexed,
+            System.Drawing.Imaging.PixelFormat.Format4bppIndexed, System.Drawing.Imaging.PixelFormat.Format8bppIndexed,
+            System.Drawing.Imaging.PixelFormat.Format16bppGrayScale,
+            System.Drawing.Imaging.PixelFormat.Format16bppArgb1555
+        };
+
         public string WeightsPath { get; private set; }
         
         /// <summary>
@@ -59,7 +67,6 @@ namespace BarronGillon.BFace.YOLOv5NET {
         {
             System.Drawing.Imaging.PixelFormat format = image.PixelFormat;
 
-            var output = new System.Drawing.Bitmap(_model.Width, _model.Height, format);
 
             var (w, h) = (image.Width, image.Height); // image width and height
             var (xRatio, yRatio) = (_model.Width / (float)w, _model.Height / (float)h); // x, y ratios
@@ -68,7 +75,18 @@ namespace BarronGillon.BFace.YOLOv5NET {
             var (x, y) = ((_model.Width / 2) - (width / 2), (_model.Height / 2) - (height / 2)); // roi x and y coordinates
             var roi = new System.Drawing.Rectangle(x, y, width, height); // region of interest
 
-            using (var graphics = System.Drawing.Graphics.FromImage(output))
+            var output = new System.Drawing.Bitmap(_model.Width, _model.Height, format);
+            System.Drawing.Bitmap tbmp = null;
+            System.Drawing.Graphics graphics = null;
+            if (pixelFormats.Contains(format)) {
+                tbmp = new System.Drawing.Bitmap(output);
+                graphics = System.Drawing.Graphics.FromImage(tbmp);
+            }
+            else {
+                graphics = System.Drawing.Graphics.FromImage(output);
+            }
+
+            //using (var graphics = System.Drawing.Graphics.FromImage(output))
             {
                 graphics.Clear(System.Drawing.Color.FromArgb(0, 0, 0, 0)); // clear canvas
 
@@ -78,8 +96,15 @@ namespace BarronGillon.BFace.YOLOv5NET {
 
                 graphics.DrawImage(image, roi); // draw scaled
             }
+            graphics.Dispose();
 
-            return output;
+            if (pixelFormats.Contains(format)) {
+                return tbmp;
+            }
+            else {
+                return output;
+            }
+
         }
 
         /// <summary>
@@ -97,17 +122,20 @@ namespace BarronGillon.BFace.YOLOv5NET {
 
             unsafe // speed up conversion by direct work with memory
             {
-                Parallel.For(0, bitmapData.Height, (y) =>
-                {
-                    byte* row = (byte*)bitmapData.Scan0 + (y * bitmapData.Stride);
+                //Parallel.For(0, bitmapData.Height, (y) =>
+                for (int y = 0; y < bitmapData.Height; y++) {
+                    byte* row = (byte*) bitmapData.Scan0 + (y * bitmapData.Stride);
 
-                    Parallel.For(0, bitmapData.Width, (x) =>
-                    {
+                    //Parallel.For(0, bitmapData.Width, (x) =>
+                    for (int x = 0; x < bitmapData.Width; x++) {
                         tensor[0, 0, y, x] = row[x * bytesPerPixel + 2] / 255.0F; // r
                         tensor[0, 1, y, x] = row[x * bytesPerPixel + 1] / 255.0F; // g
                         tensor[0, 2, y, x] = row[x * bytesPerPixel + 0] / 255.0F; // b
-                    });
-                });
+                    }
+
+                    //});
+                }
+                //});
 
                 bitmap.UnlockBits(bitmapData);
             }
@@ -127,10 +155,14 @@ namespace BarronGillon.BFace.YOLOv5NET {
                 resized = ResizeImage(image); // fit image size to specified input size
             }
 
-            var inputs = new List<NamedOnnxValue> // add image as onnx input
-            {
-                NamedOnnxValue.CreateFromTensor("images", ExtractPixels(resized ?? image))
-            };
+            //var inputs = new List<NamedOnnxValue> // add image as onnx input
+            //{
+            //    NamedOnnxValue.CreateFromTensor("images", ExtractPixels(resized ?? image))
+            //};
+            var inputs = new List<NamedOnnxValue>();
+            var pixels = ExtractPixels(resized ?? image);
+            var nov = NamedOnnxValue.CreateFromTensor("images", pixels);
+            inputs.Add(nov);
 
             IDisposableReadOnlyCollection<DisposableNamedOnnxValue> result = _inferenceSession.Run(inputs); // run inference
 
@@ -303,9 +335,11 @@ namespace BarronGillon.BFace.YOLOv5NET {
         /// <summary>
         /// Runs object detection.
         /// </summary>
-        public List<YoloPrediction> Predict(System.Drawing.Image image)
-        {
-            return Supress(ParseOutput(Inference(image), image));
+        public List<YoloPrediction> Predict(System.Drawing.Image image) {
+            var inferred = Inference(image);
+            var parsed = ParseOutput(inferred, image);
+            var suppressed = Supress(parsed);
+            return suppressed;
         }
 
         /// <summary>

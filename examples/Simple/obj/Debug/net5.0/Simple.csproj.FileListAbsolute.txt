@@ -95,5 +95,15 @@
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
 /home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
-/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Yolov5Net.Scorer.dll
-/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/Yolov5Net.Scorer.pdb
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/onnxruntime_providers_cuda.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/onnxruntime_providers_tensorrt.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/linux-x64/native/libonnxruntime_providers_cuda.so
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/linux-x64/native/libonnxruntime_providers_shared.so
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/linux-x64/native/libonnxruntime_providers_tensorrt.so
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/onnxruntime_providers_cuda.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/onnxruntime_providers_cuda.lib
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/onnxruntime_providers_cuda.pdb
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/onnxruntime_providers_tensorrt.dll
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/onnxruntime_providers_tensorrt.lib
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/runtimes/win-x64/native/onnxruntime_providers_tensorrt.pdb
+/home/barron/RiderProjects/BFace/examples/Simple/bin/Debug/net5.0/assets/images/ellen-selfie-1920.jpg
